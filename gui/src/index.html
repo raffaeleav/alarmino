@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'"
+        />
+        <meta
+        http-equiv="X-Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'"
+        />
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Alarmino</title>
+        <script defer src="./renderer.js"></script>
+    </head>
+    <body>  
+        <audio id="alarm-sound" src="./audio/alarm.mp3" preload="auto"></audio>
+
+        <div class="container">
+            <div class="status-container">
+                <div class="status-light"></div>
+                <p id="gas-value">Detection is off</p>
+            </div>
+            
+
+            <div class="buttons-container">
+                <button id="button1">Start</button>
+                <button id="button2">Deactivate alarm</button>
+                <button id="button3">Exit</button>
+            </div>
+                
+            <div class="slider-container">
+                <label for="slider">Detection treshold</label>
+                <input type="range" id="slider" min="0" max="300" value="65">
+                <span id="slider-value">65</span>
+            </div>
+        </div>
+    </body>
+</html>
