@@ -14,5 +14,5 @@
 
 ## Overview 
 <p>
-Alarmino was built to provide a valuable tool in the context of real-time gas monitoring and safety alerts. The GUI enables users to monitor gas levels (detected via an Arduino equipped with an MQ-2 sensor), analyze atmospheric concentrations for potential leaks and then trigger an acoustic alarm
+Alarmino was built to provide a valuable tool in the context of real-time gas monitoring and safety alerts. The GUI enables users to monitor gas levels (detected via an Arduino equipped with an MQ-2 sensor), analyze atmospheric concentrations for potential leaks and then trigger an acoustic alarm.
 </p>
